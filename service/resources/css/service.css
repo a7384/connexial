@@ -1,0 +1,123 @@
+html{
+    scroll-behavior: auto
+}
+/* =============== */
+/* NAVIGATION SECTION */
+/* =============== */
+#main{
+    color: white
+}
+#main:hover{
+    color: black;
+    transition: all 1s
+}
+/* =============== */
+/* REUSEABLE COMPONENT*/
+/* =============== */
+
+.roll{
+    width: 10px;
+    height: 10px;
+    border: 1px solid #2929a0;
+    border-radius:10px;
+    margin: auto;
+    margin-bottom: .5rem;
+    position:relative;
+}
+.roll::after{
+    content: "";
+    position: absolute;
+    width: 4rem;
+    height: .2rem;
+    display: block;
+    background: black;
+    top:3px;
+    left:13px
+}
+.roll::before{
+    content: "";
+    position: absolute;
+    width: 4rem;
+    height: .2rem;
+    display: block;
+    background: black;
+    top:3px;
+    right:13px
+}
+
+/* =============== */
+/* HEADER SECTION */
+/* =============== */
+.banner{
+    text-align: center
+}
+.banner h2{
+    margin-top: 20px;
+}
+.banner .hero-image{
+  background: url(bg-img/1.jpg);
+    height: 80vh
+}
+.hero-image .hero-text{
+    color: white;
+    text-align: center;
+    padding-top: 300px;
+    font-family: 'Cookie', cursive;
+}
+/* =============== */
+/* SERVICE SECTION */
+/* =============== */
+.my_service{
+    text-align: center;
+    padding: 4rem;
+}
+/* =============== */
+/* CONTACT SECTION */
+/* =============== */
+.contact{
+    text-align: center;
+    background: #0000FF;
+    color: white;
+    padding: 2rem;
+}
+.contact p{
+    text-align: justify
+}
+
+#social_icon{
+    font-size: 25px;
+    color: white
+}
+
+#social_icon:hover{
+    color: #91E576;
+    transition: all .5s;
+}
+#social_text{
+    color: white
+}
+.contact .topic1{
+    width: 100%;
+    margin: 1rem auto;
+}
+/* =============== */
+/* FOOTER SECTION */
+/* =============== */
+.footer{
+    text-align: center;
+    color: white
+}
+.footer .footer1{
+    background: #000;
+    padding: 5px 8px;
+}
+/* =============== */
+/* BOTTOM - TOP SECTION */
+/* =============== */
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display:none;
+}
